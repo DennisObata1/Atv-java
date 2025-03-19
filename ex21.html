@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 21</title>
+</head>
+<body>
+
+    <script>
+        var quant = parseInt(prompt("Digite a quantidade de pessoas no grupo:"));
+        var menor = 0; 
+        var maior = 0; 
+        
+        for (let i = 1; i <= quant; i++) {
+            let age = parseInt(prompt("Digite a idade da pessoa " + i + ":"));
+            
+            if (age < 18) {
+                menor++; 
+            } else {
+                maior++; 
+            }
+        }
+
+        document.write("Quantidade de menores de idade: " + menor + "<br>");
+        document.write("Quantidade de maiores de idade: " + maior + "<br>");
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 19</title>
+</head>
+<body>
+
+    <script>
+        var n1 = parseFloat(prompt("Digite a nota 1:"));
+        var n2 = parseFloat(prompt("Digite a nota 2:"));
+        var n3 = parseFloat(prompt("Digite a nota 3:"));
+
+        let media = (n1 + n2 + n3) / 3
+
+        if (media >= 7) {
+            document.write(media.toFixed(1) + " Você foi aprovado" + "<br>");
+        } else {
+            document.write(media.toFixed(1) + " Você foi reprovado" + "<br>");
+        }
+
+    </script>
+
+</body>
+</html>
