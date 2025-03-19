@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 13</title>
+</head>
+<body>
+
+    <script>
+        var n1 = parseInt(prompt("Digite um número inteiro:"));
+        var n2 = parseInt(prompt("Digite um número intero:"));
+
+        if (n2 === 0) {
+            document.write("Não é possível verificar se um número é múltiplo de zero." + "<br>");
+        } else if(n1 % n2 === 0){
+            document.write(n1 + " é múltiplo de " + n2 + "<br>");
+        } else {
+            document.write(n1 + " não é múltiplo de " + n2 + "<br>");
+        }
+    </script>
+
+</body>
+</html>
