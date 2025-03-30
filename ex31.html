@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 31</title>
+</head>
+<body>
+    <script>
+        var salmin = parseFloat(prompt("Digite o valor atual do salário-mínimo:"));
+
+        while (salmin <= 0) {
+            salmin = parseFloat(prompt("Valor inválido! Digite o valor do salário-mínimo novamente:"));
+        }
+        
+        var salf = parseFloat(prompt("Digite o salário do funcionário:"));
+        
+        while (salf <= 0) {
+            salf = parseFloat(prompt("Valor inválido! Digite o salário do funcionário novamente:"));
+        }
+        
+        let quantsalmin = salf / salmin;
+        
+        document.write("O funcionário recebe " + quantsalmin.toFixed(2) + " salários-mínimos." + "<br>");
+        document.write("Salário-mínimo atual: R$ " + salmin.toFixed(2) + "<br>");
+        document.write("Salário do funcionário: R$ " + salf.toFixed(2));
+    </script>
+</body>
+</html>
