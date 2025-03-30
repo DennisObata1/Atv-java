@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 24</title>
+</head>
+<body>
+
+    <script>
+        var n1 = parseInt(prompt("Digite o primeiro número inteiro:"));
+        var n2 = parseInt(prompt("Digite o segundo número inteiro:"));
+        var n3 = parseInt(prompt("Digite o terceiro número inteiro:"));
+
+        if (n1 < n2 && n1 < n3 && n2 < n3){
+            document.write("A ordem crescente é " + n1 + "<br>" + n2 + "<br>" + n3);
+        } else if (n1 < n3 && n1 < n2 && n3 < n2) {
+            document.write("A ordem crescente é " + n1 + "<br>" + n3 + "<br>" + n2);
+        } else if (n2 < n1 && n2 < n3 && n1 < n3) {
+            document.write("A ordem crescente é " + n2 + "<br>" + n1 + "<br>" + n3);
+        } else if (n2 < n3 && n2 < n1 && n3 < n1) {
+            document.write("A ordem crescente é " + n2 + "<br>" + n3 + "<br>" + n1);
+        } else if (n3 < n1 && n3 < n2 && n1 < n2) {
+            document.write("A ordem crescente é " + n3 + "<br>" + n1 + "<br>" + n2);
+        } else if (n3 < n2 && n3 < n1 && n2 < n1) {
+            document.write("A ordem crescente é " + n3 + "<br>" + n2  + "<br>" + n3);
+        } else {
+            document.write("Ordem inválida")
+        }
+    </script>
+
+</body>
+</html>
